@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 
 function QouteDisplay() {
   const [quote, setQuote] = useState(null);
-  const [random, setRandom] = useState(0);
+  const [random, setRandom] = useState( Math.floor(Math.random() * 29));
 
   const getQuote = async () => {
     const result = await axios
